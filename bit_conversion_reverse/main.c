@@ -2,42 +2,6 @@
 #include<stdlib.h>
 #include<math.h>
 
-int binToInt(int n){
-    int sum = 0;
-    int counter = 0;
-
-    while(n){
-        sum = (n%10)*pow(2, counter) + sum;
-        counter ++;
-        n = n/10;
-    }
-
-    return sum;
-}
-
-double binToDouble(double n){
-    int counter = 0;
-    double sum = 0;
-
-    for(int i = 0; i < 8; i ++){
-        if(n*10 >= 1.2){
-            sum = (1)*pow(2, -counter) + sum;
-            n = n - 1;
-            counter ++;
-            n = n*10;
-        }else{
-            sum = ((int)n)*pow(2, -counter) + sum;
-            n = n - (int)n;
-            counter ++;
-            n = n*10;
-        }
-        
-        printf("%f \n", n);
-    }
-
-    return sum;
-}
-
 void main(){
     int binar[32];
     int exponent = 0;
