@@ -57,18 +57,12 @@ void main(){
         k++;
     }
 
-    printf("%d \n", exponent);
-
     exponent = exponent - 127;
-
-    printf("%d \n", exponent);
 
     for(int i = 9 + exponent; i < 32; i++){
         pz = binar[i]* pow(2, -counter) + pz;
         counter++;
     }
-
-    printf("%f \n", pz);
 
     for(int i = 9 + exponent - 1; i > 8 ; i--){
         pi = binar[i]*pow(2, counter1) + pi;
