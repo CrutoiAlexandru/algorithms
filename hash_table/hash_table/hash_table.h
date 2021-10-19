@@ -11,4 +11,5 @@ int  HASH_PRIM(int, int);
 void HASH_PRINT(int[], int);
 int  HASH_SEARCH(int[], int, int);
 int  HASH_DELETE(int[], int, int);
+
 #endif
