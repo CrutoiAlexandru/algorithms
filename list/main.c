@@ -58,6 +58,6 @@ int main(){
       comanda = Get_command();
    }
 
-    free_mem(&lista);
+   free_mem(&lista);
 	return 0;
 }
