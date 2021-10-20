@@ -15,11 +15,11 @@ typedef struct queue{
     int  head, tail, length;
 }t_queue;
 
-void INIT_QUEUE(t_queue *, int);
-void ENQUEUE(t_queue *, int);
-void PRINT_QUEUE(t_queue);
-int  QUEUE_EMPTY(t_queue);
-int  DEQUEUE(t_queue *);
-void FREE_QUEUE(t_queue *);
+void INIT_QUEUE(t_queue *Q, int INIT_SIZE);
+void ENQUEUE(t_queue *Q, int value);
+void PRINT_QUEUE(t_queue Q);
+int  QUEUE_EMPTY(t_queue Q);
+int  DEQUEUE(t_queue *Q);
+void FREE_QUEUE(t_queue *Q);
 
 #endif 
