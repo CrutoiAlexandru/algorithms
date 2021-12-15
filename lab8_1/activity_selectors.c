@@ -38,7 +38,7 @@ int greedy_activity_selector(int s[], int f[], int n, int a[]) {
     int k  = 0;
     int m;
 
-    for(m = 1; m < n; m++) {
+    for(m = 1; m <= n; m++) {
         if(s[m] >= f[k]) {
             na++;
             a[na] = m;
