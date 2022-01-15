@@ -1,0 +1,18 @@
+introduceti un nr n, m=n*n, m-numarul de militari, pt fiecare soldat trebuie introdusa o inaltime...aranjati militarii intr-o formatie,de dimensiune nxn(matrice), 
+astfel incat pe coloane sa fie in ordine descrescatoare si pe linii inaltimi apropiate,+-5 cm...matricea se construieste de sus in jos
+
+cel mai usor mod de a rezolva problema este ordonarea militarilor in ordine descrescatoare
+deoarece aceasta ordine ii va pune langa cea mai apropiata inaltime 
+
+1. ne gandim la toate variabilele de care avem nevoie
+
+2. citim numarul n total de linii si coloane din care vom gasi si nr total de militari m = n * n 
+
+3. citim inaltimea fiecarui militar de la 0 pana la m si o retinem intrun vector numit height
+
+4. sortam descrescator inaltimile militarilor folosind bubble sortul, adica comparam fiecare valoare cu urmatoarele pentru a gasi locul potrivit. Metoda aceasta 
+se poate aplica in mai multe situatii. Ordonarea crescatoare se face prin schimbare semnului < cu >
+
+5. cream un contor k = 0 pentru scrierea inaltimilor in matrice, height[k] unde k creste la fiecare scriere
+
+6. cream matricea in care scriem inaltimile militarilor si apoi o printam
