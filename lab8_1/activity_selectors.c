@@ -3,15 +3,15 @@
 void print_array(int r[], int n){
     int i;
 
-    for(i = 0; i < n; i++){
-        printf("%d", r[i]);
+    for(i = 1; i <= n; i++) {
+        printf("%d  ", r[i]);
     }
 }
 
 void read_array(int r[], int n) {
     int i;
 
-    for(i = 0; i < n; i++){
+    for(i = 1; i <= n; i++) {
         scanf("%d", &r[i]);
     }
 }

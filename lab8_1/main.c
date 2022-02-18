@@ -4,9 +4,12 @@ int main(){
     int sol_rec[100], sol_iter[100], s[100], f[100];
     int n, length_sol_it, length_sol_rec;
 
+    printf("cititi n: ");
     scanf("%d", &n);
-  
+    
+    printf("cititi sirul s: ");
     read_array(s, n);
+    printf("cititi sirul f: ");
     read_array(f, n);
 
     f[0] = 0;
